@@ -35,6 +35,8 @@ class Install extends Migration
         $this->delete('{{%plugins}}', ['id' => $row['id']]);
         $projectConfig->remove($oldKey);
 
+        (new m190412_182837_update_craft2_fieldtype())->safeUp();
+
         return true;
     }
 }

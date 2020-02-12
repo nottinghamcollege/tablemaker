@@ -1,6 +1,6 @@
 <?php
 
-namespace craft\contentmigrations;
+namespace supercool\tablemaker\migrations;
 
 use craft\db\Migration;
 use supercool\tablemaker\fields\TableMakerField;
